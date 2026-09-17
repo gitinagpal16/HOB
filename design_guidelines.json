@@ -1,0 +1,121 @@
+{
+  "project_title": "Nagpal's House of Beauty — Luxury Salon Furniture",
+  "art_direction": "Editorial Architectural Luxury (Awwwards SOTD Standard). Fusion of Deep Forest Green (#1C2B22), Warm Ivory (#F5F1E8), Antique Brass (#B4863C), and Rich Espresso (#3A281E). Features line-by-line masked kinetic headline reveals, full-bleed warm brown furniture photography, bento grid showcases, interactive rotating category selector, numbered manifesto chapters, and high-converting WhatsApp direct inquiry paths.",
+  "brand_identity": {
+    "name": "NAGPAL'S HOUSE OF BEAUTY",
+    "tagline": "Architectural Elegance & Ergonomic Perfection for India's Premier Salons",
+    "location": "Delhi Headquarters & Pan-India Bulk Delivery",
+    "display_rule": "Always display the brand name 'NAGPAL'S HOUSE OF BEAUTY' in ALL CAPS with wide letter-spacing (tracking-widest) and antique brass or warm ivory typography."
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Syne / Marcellus / Bodoni Moda (Bold yet sleek display sans/serif for commanding headers)",
+      "body": "Karla / Satoshi (Clean, highly legible geometric/humanist sans for body and specs)"
+    },
+    "hierarchy": {
+      "brand_title": "font-bold text-2xl sm:text-3xl tracking-widest uppercase font-serif text-[#F5F1E8]",
+      "hero_headline": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight uppercase leading-[1.05] text-[#F5F1E8]",
+      "section_title": "text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight uppercase text-[#F5F1E8]",
+      "subsection_title": "text-xl sm:text-2xl font-medium tracking-normal text-[#B4863C]",
+      "card_title": "text-lg sm:text-xl font-bold tracking-tight text-[#F5F1E8]",
+      "body_text": "text-base sm:text-lg leading-relaxed text-[#F5F1E8]/80 font-sans",
+      "overline_label": "text-xs sm:text-sm uppercase tracking-[0.25em] font-semibold text-[#B4863C]"
+    }
+  },
+  "colors": {
+    "primary_dark": "#1C2B22",
+    "primary_dark_obsidian": "#0F1411",
+    "secondary_ivory": "#F5F1E8",
+    "accent_brass": "#B4863C",
+    "accent_brass_hover": "#C89B4C",
+    "accent_espresso": "#3A281E",
+    "card_bg_dark": "rgba(28, 43, 34, 0.85)",
+    "glass_border": "rgba(180, 134, 60, 0.25)",
+    "text_primary": "#F5F1E8",
+    "text_muted": "rgba(245, 241, 232, 0.7)",
+    "whatsapp_green": "#25D366"
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-4 sm:px-8 lg:px-16 py-12 lg:py-24",
+    "grid_gap": "gap-6 lg:gap-10",
+    "bento_mode": "Tetris Asymmetrical Grid (Mode A) combining large featured hero tiles with supporting detail cards.",
+    "border_style": "1px solid rgba(180, 134, 60, 0.2) with subtle inner glow on hover"
+  },
+  "key_sections": [
+    {
+      "section_id": "header_nav",
+      "description": "Sticky Nav bar with glassmorphism backdrop (bg-[#0F1411]/80 backdrop-blur-xl), glowing brass border, bold CAPS brand title 'NAGPAL'S HOUSE OF BEAUTY', Desktop links with interactive hover indicator, expandable Products Dropdown with direct links to categories, and 'WhatsApp Direct Enquire' CTA button.",
+      "components": ["LogoBadge", "DesktopNav", "ProductsDropdown", "WhatsAppNavCTA", "MobileMenuSheet"]
+    },
+    {
+      "section_id": "hero_kinetic",
+      "description": "Kinetic Hero with full-bleed warm brown salon furniture showcase image, signature on-load masked line-by-line headline reveal, subheader detailing Pan-India retail + bulk supply, 'Explore Now' button with smooth scroll to #all-categories, and interactive 3D/Parallax preview card.",
+      "components": ["MaskedHeadline", "ExploreNowButton", "HeroParallaxCard", "QuickSpecsBadge"]
+    },
+    {
+      "section_id": "partners_logo_grid",
+      "description": "Prestigious 'Trusted By Elite Salons Across India' logo wall displaying high-contrast brass/ivory partner badges (e.g. Toni & Guy India, VLCC Luxury, Looksfam Studio, Affinity Salon, BBLUNT, Javed Habib).",
+      "components": ["LogoWallGrid", "PartnerBadgeItem"]
+    },
+    {
+      "section_id": "all_categories_grid",
+      "description": "All-Categories Bento Grid (#all-categories anchor target) showcasing core lines: 1) Hydraulic Styling Chairs, 2) Shampoo & Reclining Wash Units, 3) LED Workstations & Mirrors, 4) Heavy-Duty Salon Trolleys, 5) Pedicure & Spa Thrones.",
+      "components": ["CategoryBentoCard", "CategoryHoverOverlay", "CategoryItemCount"]
+    },
+    {
+      "section_id": "rotating_category_selector",
+      "description": "Interactive rotating wheel/tab category-product selector section. Selecting a category (e.g. 'Wash Units' or 'Styling Chairs') smoothly rotates the active product spotlight card with live specs, 360-view simulator, and bulk order pricing option.",
+      "components": ["CategoryWheelSelector", "ProductSpotlightCard", "SpecHighlightPill"]
+    },
+    {
+      "section_id": "products_best_sellers",
+      "description": "Best Sellers catalog grid featuring high-resolution brown-toned furniture cards, brass star ratings, quick WhatsApp enquiry modal trigger, and retail vs bulk pricing tags.",
+      "components": ["ProductCard", "WhatsAppEnquiryButton", "RetailBulkBikesTag", "QuickViewDialog"]
+    },
+    {
+      "section_id": "manifesto_about_us",
+      "description": "Numbered Manifesto Chapters ('About Us'): Chapter 01 - The Delhi Atelier, Chapter 02 - Ergonomic Mastery for 12-Hour Styling Sessions, Chapter 03 - Pan-India White-Glove Logistics.",
+      "components": ["ManifestoChapterRow", "ChapterNumberBadge", "DelhiCraftsmanshipStory"]
+    },
+    {
+      "section_id": "brown_toned_gallery",
+      "description": "Warm brown-toned furniture photography gallery featuring rich leather textures, polished wood finishes, and brushed brass details in an editorial mosaic with spotlight cursor frames.",
+      "components": ["GalleryMosaic", "SpotlightFrame", "ImageZoomModal"]
+    },
+    {
+      "section_id": "instagram_showcase",
+      "description": "BIGGER Instagram section mimicking a live luxury showroom feed (@nagpalhouseofbeauty), showcasing real salon floor setups across Delhi NCR, Mumbai, Bangalore, and Chandigarh.",
+      "components": ["InstagramHeaderBanner", "InstaGridCard", "InstaFollowButton"]
+    },
+    {
+      "section_id": "whatsapp_contact_band",
+      "description": "High-impact conversion band with direct WhatsApp API integration (`https://wa.me/919876543210?text=...`), instant consultation booking form, Delhi showroom address, and footer menu.",
+      "components": ["WhatsAppBandCTA", "ShowroomAddressCard", "QuickContactForm", "FooterLegal"]
+    }
+  ],
+  "motion_and_interactions": {
+    "smooth_scroll": "Lenis JS smooth scrolling engine enabled on root window.",
+    "scroll_reveals": "Framer Motion stance reveals with opacity: 0 -> 1 and y: 40 -> 0 with custom cubic-bezier ease [0.22, 1, 0.36, 1].",
+    "headline_reveal": "Masked line-by-line stagger animation on page load.",
+    "marquee": "Slow editorial text marquee drifting softly across background with low-opacity brass outline font.",
+    "hover_states": "Buttons lift by -2px with glowing inner brass stroke; cards increase border brightness on focus."
+  },
+  "image_urls": {
+    "hero_background": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "styling_chairs_category": "https://images.unsplash.com/photo-1706629503650-cade709d15e3?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "wash_units_category": "https://images.unsplash.com/photo-1675034743433-bdc9aee1cafc?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "workstations_mirrors": "https://images.unsplash.com/photo-1706629505300-168aa1604912?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "trolleys_accessories": "https://images.unsplash.com/photo-1633681926035-ec1ac984418a?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "brown_leather_chair": "https://images.unsplash.com/photo-1585611647522-ce9aebe1a467?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "brown_armchair_wood": "https://images.unsplash.com/photo-1605797063353-4cbcb6027f2c?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "brown_leather_sofa": "https://images.unsplash.com/photo-1605797062177-0dfba57c72fe?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "barber_throne_classic": "https://images.unsplash.com/photo-1605702098590-d552a98dc93d?crop=entropy&cs=srgb&fm=jpg&q=85"
+  },
+  "instructions_to_main_agent": [
+    "Ensure the header navigation is sticky and contains 'NAGPAL'S HOUSE OF BEAUTY' prominently in CAPS.",
+    "The 'Explore Now' CTA button in the hero must smoothly scroll to `#all-categories` section using Lenis / scrollIntoView.",
+    "Implement the WhatsApp CTA button using `https://wa.me/` link that pre-fills message text like 'Hello Nagpal's House of Beauty, I am interested in salon furniture inquiry for my salon.'",
+    "Include `data-testid` attributes on all interactive elements (e.g. `data-testid='nav-brand-logo'`, `data-testid='hero-explore-now-button'`, `data-testid='whatsapp-enquiry-button'`, `data-testid='category-card-styling-chairs'`).",
+    "Use deep forest green (#1C2B22), warm ivory (#F5F1E8), and antique brass (#B4863C) as the dominant palette throughout the application."
+  ]
+}

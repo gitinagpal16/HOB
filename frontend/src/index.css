@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green-deep: #1C2B22;
+  --obsidian: #0F1411;
+  --ivory: #F5F1E8;
+  --brass: #B4863C;
+  --brass-light: #D3AA66;
+  --espresso: #3A281E;
+}
+
+html {
+  overflow-x: clip;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+body {
+  margin: 0;
+  background: var(--obsidian);
+  color: var(--ivory);
+  font-family: 'Karla', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+}
+
+.font-display {
+  font-family: 'Syne', sans-serif;
+}
+
+::selection {
+  background: var(--brass);
+  color: var(--obsidian);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--obsidian);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--green-deep);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brass);
+}
+
+/* Grain overlay */
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Editorial marquee */
+@keyframes marquee-drift {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-drift 46s linear infinite;
+}
+.marquee-outline {
+  -webkit-text-stroke: 1px rgba(180, 134, 60, 0.45);
+  color: transparent;
+}
+
+/* Masked headline lines */
+.mask-line {
+  overflow: hidden;
+  display: block;
+}
+
+/* Warm brown treatment for imagery */
+.warm-tone {
+  filter: sepia(0.22) saturate(1.08) contrast(1.02);
+}
+
+/* Brass hairline */
+.brass-rule {
+  height: 1px;
+  background: linear-gradient(90deg, var(--brass), rgba(180, 134, 60, 0));
+}
+
+@layer base {
+  [data-debug-wrapper="true"] {
+    display: contents !important;
+  }
+}
+
+/* Google Maps tone */
+.map-tone {
+  filter: grayscale(0.35) sepia(0.12) contrast(0.96);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
